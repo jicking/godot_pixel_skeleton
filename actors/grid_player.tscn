@@ -1,10 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://cxu60bfxgvnrl"]
+[gd_scene load_steps=6 format=3 uid="uid://cxfayoymfs1f8"]
 
 [ext_resource type="Script" path="res://actors/grid_player.gd" id="1_3laxo"]
-[ext_resource type="Texture2D" uid="uid://dy48jbi3lj5tr" path="res://assets/tiles/tilemap_packed.png" id="1_7n6xm"]
+[ext_resource type="Texture2D" uid="uid://dy48jbi3lj5tr" path="res://assets/tiles/dungeon_tilemap_packed.png" id="2_e82os"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_winbu"]
-atlas = ExtResource("1_7n6xm")
+atlas = ExtResource("2_e82os")
 region = Rect2(0, 128, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_85pl4"]
@@ -18,9 +18,17 @@ animations = [{
 "speed": 8.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ypp3u"]
+size = Vector2(16, 16)
+
 [node name="GridPlayer" type="Area2D"]
 script = ExtResource("1_3laxo")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_85pl4")
 autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ypp3u")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
