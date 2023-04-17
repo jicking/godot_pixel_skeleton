@@ -1,9 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://j87n4lychbt5"]
 
 [ext_resource type="Script" path="res://main_menu/version_label.gd" id="1_5huni"]
-[ext_resource type="PackedScene" uid="uid://bdnyglk1i1cxl" path="res://gameplay/gameplay.tscn" id="2_5nvqq"]
 [ext_resource type="Script" path="res://main_menu/menu_options.gd" id="2_gpv3d"]
 [ext_resource type="PackedScene" uid="uid://dpicmplffpula" path="res://settings/settings.tscn" id="3_2osu0"]
+[ext_resource type="PackedScene" uid="uid://3c0tcss8tje2" path="res://gameplay/level00.tscn" id="3_pkuwc"]
 [ext_resource type="PackedScene" uid="uid://cee5dna3u27jf" path="res://assets/select_sfx.tscn" id="4_82nwe"]
 
 [node name="MainMenu" type="Control"]
@@ -50,10 +50,10 @@ text = "A game by YOU"
 
 [node name="Controls" type="Label" parent="."]
 layout_mode = 0
-offset_left = 843.0
-offset_top = 573.0
-offset_right = 1251.0
-offset_bottom = 677.0
+offset_left = 788.0
+offset_top = 631.0
+offset_right = 1268.0
+offset_bottom = 720.0
 text = "CONTROLS
 Move: WASD | Accept: J | Cancel: K | Pause: P
 Move: Arrow Keys | Accept: Z | Cancel: Z | Pause: Esc
@@ -62,19 +62,19 @@ horizontal_alignment = 2
 
 [node name="Instructions" type="Label" parent="."]
 layout_mode = 0
-offset_left = 54.0
-offset_top = 570.0
-offset_right = 365.0
-offset_bottom = 674.0
+offset_left = 16.0
+offset_top = 670.0
+offset_right = 327.0
+offset_bottom = 719.0
 text = "INSTRUCTIONS
 Collect all the things!"
 
 [node name="Version" type="Label" parent="."]
 layout_mode = 0
-offset_left = 1060.0
-offset_top = 20.0
-offset_right = 1258.0
-offset_bottom = 46.0
+offset_left = 1017.0
+offset_top = 9.0
+offset_right = 1271.0
+offset_bottom = 35.0
 text = "Version: [set dynamically]"
 horizontal_alignment = 2
 script = ExtResource("1_5huni")
@@ -103,7 +103,7 @@ grow_vertical = 2
 shortcut_context = NodePath("Start")
 alignment = 1
 script = ExtResource("2_gpv3d")
-gameplay_scene = ExtResource("2_5nvqq")
+gameplay_scene = ExtResource("3_pkuwc")
 settings_scene = ExtResource("3_2osu0")
 
 [node name="Start" type="Button" parent="MenuOptions"]
