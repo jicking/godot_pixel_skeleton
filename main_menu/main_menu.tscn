@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://main_menu/version_label.gd" id="1_5huni"]
 [ext_resource type="Script" path="res://main_menu/menu_options.gd" id="2_gpv3d"]
 [ext_resource type="PackedScene" uid="uid://dpicmplffpula" path="res://settings/settings.tscn" id="3_2osu0"]
-[ext_resource type="PackedScene" uid="uid://3c0tcss8tje2" path="res://gameplay/level00.tscn" id="3_pkuwc"]
+[ext_resource type="PackedScene" uid="uid://dot0ndpmn6vku" path="res://gameplay/level00.tscn" id="3_pkuwc"]
 [ext_resource type="PackedScene" uid="uid://cee5dna3u27jf" path="res://assets/select_sfx.tscn" id="4_82nwe"]
 
 [node name="MainMenu" type="Control"]
